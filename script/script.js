@@ -30,6 +30,9 @@ missionModalOpen.onclick = function(){
 missionModalClose.onclick = function(){
   mission_modal.style.display = 'none';
 }
+window.onclick = function (e) {
+	if(e.target == mission_modal) mission_modal.style.display = 'none';
+}
 
 let hero_modal = document.getElementById('hero__modal');
 let heroModalClose = document.getElementById('hero__modal-close');
@@ -41,4 +44,7 @@ heroModalOpen.onclick = function(){
 }
 heroModalClose.onclick = function(){
   hero_modal.style.display = 'none';
+}
+window.onclick = function (e) {
+	if(e.target == hero_modal) hero_modal.style.display = 'none';
 }
