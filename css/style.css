@@ -10,8 +10,8 @@ a {
 .container {
     width: 100%;
     max-width: 1440px;
-    height: 212px;
     margin: 0 auto;
+    padding: 0 25px;
 }
 .social-list{
     width: 20%;
@@ -45,13 +45,8 @@ a {
     
 }
 .header_logo{
-   
     position:absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 0;
-    padding-top: 50px ;
+    padding-left: 452px;
 }
 .social-list{
     list-style: none;
@@ -97,8 +92,7 @@ a {
 }
 .header_logo img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    
     z-index: 0;
 }
 .header_nav .menu{
@@ -552,12 +546,27 @@ a {
     padding-top: 50px;
     background: radial-gradient(100% 385.94% at 0% 2.86%, #8563CD 0%, #8426A0 100%)
 }
-.podrob{
-   position: absolute;
-   margin-top: -75px;
+.teachers{
+    width: 100%;
+    height: 722px;
+    padding-top: 50px;
+    background: radial-gradient(100% 385.94% at 0% 2.86%, #8563CD 0%, #8426A0 100%)
+}
+.teachers__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.teachers__header h2{
+    width: 510px;
+    color: #FFFFFF;
+    font-size: 36px;
+    font-family: 'Montserrat';
+    font-style: normal;
+}
+.teachers__header button{
     width: 260px;
     height: 60px;
-    margin-left: 1200px; 
     background: transparent;
     border-radius: 50px;
     color: white;
@@ -566,45 +575,34 @@ a {
     font-size: 20px;
     border:3px solid #FE944D;
 }
-.prepodi h2{
-    padding-left: 60px;
-    width: 494px;
-    height: 88px;
-    color: #FFFFFF;
-    font-size: 36px;
-    font-family: 'Montserrat';
-    font-style: normal;
-}
-.fio{
-    display: inline-block;
-    margin-left: 44px;
+.teachers__list{
+    display: flex;
+    justify-content: space-between;
     margin-top: 60px;
-    width: 308px;
-    height: 390px;
-    padding-left: 60px;
-    padding-top: 242px;
+    gap: 20px;
+    list-style: none;
+}
+.teachers__item{
+    width: 100%;
     background: #FFFFFF;
     border-radius: 25px;
-}
-.fio h5{
     position: relative;
-    bottom: 140%;
+    padding: 20px;
+    text-align: center;
+}
+.teachers__item h5{
+    position: relative;
     font-family: 'Montserrat';
     font-style: normal;
     font-size: 20px;
-    margin-left: 10px;
+    margin: 20px 0;
 }
-.fio h6{
+.teachers__item h6{
     position: relative;
-    bottom: 140%;
-    margin-left: 60px;
-    margin-top: 10px;
 }
-.fio img{
+.teachers__item img{
     position: relative;
-    bottom: 150%;
-    right: 10%;
-    
+    width: 100%;
 }
 .project{
     width: 100%;
@@ -660,3 +658,11 @@ a {
     position: relative;
     z-index: 1;
 }
+@media screen and (max-width: 900px) and (min-width: 600px) {
+    .container {
+        width: 100%;
+        max-width: 900px;
+        height: 212px;
+        margin: 0 auto;
+    }
+  }
