@@ -88,6 +88,7 @@ a {
     margin-bottom: 20px;
 }
 .ko{
+    font-family: 'Roboto';
     list-style: none;
     padding-top: 78px;
     z-index: 1;
@@ -441,7 +442,7 @@ a {
 .cartochka h6{
     font-size: 0;
     position: absolute;
-    
+    opacity: 80%;
     margin-bottom: 50px;
     color: #FFFFFF;
     text-align: center;
@@ -449,6 +450,7 @@ a {
 .cartochka:hover h6{
     font-size: 16px;
     margin-top: 250px;
+    z-index: 2;
 }
 .cartochka img{
     position: absolute;
@@ -646,7 +648,6 @@ a {
 .glide__arrows{
     position: absolute;
     width: 100%;
-    /* transform: translateY(50%) */
 }
 .glide__arrow--left,.glide__arrow--right{
     padding: 0;
@@ -654,11 +655,11 @@ a {
     margin-top: 40px;
 }
 .cart_img{
-    /* filter: brightness(50%); */
     z-index: -1;
 }
 @media screen and (max-width: 900px) and (min-width: 600px) {
     .container {
-        
+        max-width: 719px;
     }
+
   }
